@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NISAR General Store</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom scroll padding for fixed navbar */
+    html {
+      scroll-padding-top: 72px;
+    }
+    /* Background pattern for hero section */
+    .hero-bg {
+      background: radial-gradient(circle at center, #12828e 0%, #074b54 85%);
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  </style>
+</head>
+<body class="font-sans bg-gray-50 text-gray-800">
+
+<!-- Header (Navbar) -->
+<header class="fixed top-0 left-0 right-0 bg-teal-900 bg-opacity-95 z-50 shadow-md">
+  <nav class="max-w-7xl mx-auto flex items-center justify-between p-4 md:p-5">
+    <div>
+      <a href="#home" class="text-2xl font-bold text-green-400 hover:text-green-300 transition">NISAR General Store</a>
+    </div>
+    <ul class="hidden md:flex space-x-8 text-white font-semibold">
+      <li><a href="#home" class="hover:text-green-300 transition">Home</a></li>
+      <li><a href="#categories" class="hover:text-green-300 transition">Categories</a></li>
+      <li><a href="#new-arrivals" class="hover:text-green-300 transition">New Arrivals</a></li>
+      <li><a href="https://wa.me/9453157463" target="_blank" rel="noopener" class="hover:text-green-300 transition">WhatsApp Us</a></li>
+    </ul>
+    <a href="tel:+9453157463" aria-label="Call Now" 
+      class="ml-4 px-4 py-2 bg-green-500 hover:bg-green-600 text-white rounded-full text-sm font-semibold transition shadow-md hidden md:inline-block">
+      Call Now
+    </a>
+    <!-- Mobile Hamburger -->
+    <div id="mobile-menu-button" class="md:hidden text-white cursor-pointer p-2">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+        stroke-width="2" >
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden bg-teal-900 bg-opacity-95 pb-4">
+    <ul class="flex flex-col text-white font-semibold space-y-3 px-6">
+      <li><a href="#home" class="block py-2 hover:text-green-300 transition">Home</a></li>
+      <li><a href="#categories" class="block py-2 hover:text-green-300 transition">Categories</a></li>
+      <li><a href="#new-arrivals" class="block py-2 hover:text-green-300 transition">New Arrivals</a></li>
+      <li><a href="https://wa.me/9453157463" target="_blank" class="block py-2 hover:text-green-300 transition">WhatsApp Us</a></li>
+      <li><a href="tel:+9453157463" aria-label="Call Now" class="block py-2 bg-green-500 hover:bg-green-600 rounded-full text-center transition">Call Now</a></li>
+    </ul>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section id="home" class="hero-bg min-h-[400px] flex items-center justify-center text-center px-4 sm:px-8">
+  <div class="max-w-4xl text-white">
+    <h1 class="text-4xl md:text-5xl font-extrabold leading-tight drop-shadow-lg">Your One-Stop Shop for Everything!</h1>
+    <p class="mt-4 text-lg md:text-xl font-medium tracking-wide drop-shadow-sm">
+      Cosmetics • Laces • Stationery • Health Needs • Daily Provisions
+    </p>
+    <div class="mt-8 flex flex-col sm:flex-row justify-center gap-5">
+      <a href="#categories" class="px-8 py-3 bg-green-500 hover:bg-green-600 rounded-lg text-white font-semibold text-lg transition shadow-md">
+        Browse Products
+      </a>
+      <a href="https://wa.me/9453157463" target="_blank" rel="noopener" 
+        class="px-8 py-3 border-2 border-green-500 hover:bg-green-500 hover:text-white rounded-lg text-green-300 font-semibold text-lg transition shadow-md flex items-center justify-center gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-current" viewBox="0 0 24 24"><path d="M20.52 3.48A11.88 11.88 0 0012 .1a11.88 11.88 0 00-8.91 20.44l-1.42 4.57 4.69-1.36a11.87 11.87 0 0014.16-20.27zm-8.42 18.5a9.32 9.32 0 01-4.8-1.39l-.34-.2-2.78.8.79-2.71-.23-.35a9.3 9.3 0 015.33-15.11 9.37 9.37 0 019.7 8.14 9.36 9.36 0 01-7.38 10.82zm5.3-6.2l-1.53-.66a.89.89 0 00-1 .22l-.48.64a6.53 6.53 0 01-3.05-1.88 6.47 6.47 0 01-1.68-3.29l.72-.44a.9.9 0 00.36-1.15l-1.13-2a.92.92 0 00-1.31-.36l-1.53.91a.9.9 0 00-.4 1 8.4 8.4 0 00.56 1.31l3.45 6.26a3.23 3.23 0 002.9 1.54 3.27 3.27 0 002.63-1.46l.42-.65a.9.9 0 00-.23-1.22z"/></svg>
+        Send Order on WhatsApp
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Featured Categories -->
+<section id="categories" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+  <h2 class="text-3xl font-extrabold text-teal-900 mb-10 text-center">Shop By Category</h2>
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+    <!-- Card 1: Cosmetics & Beauty -->
+    <div class="bg-white rounded-xl shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition">
+      <svg class="w-16 h-16 mb-4 text-green-500" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M17.657 16.657A8 8 0 116.343 5.343 8 8 0 0117.657 16.657z"></path>
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M12 12l2 2m-4 0l2-2m0 0l2 2m-2 0l-2-2"></path>
+      </svg>
+      <h3 class="text-xl font-semibold text-teal-900 mb-2">Cosmetics & Beauty</h3>
+      <p class="text-gray-600">Hair Color, Creams, Healthcare Brands like Nisha</p>
+    </div>
+    <!-- Card 2: Fancy & Tailoring -->
+    <div class="bg-white rounded-xl shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition">
+      <svg class="w-16 h-16 mb-4 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2"
+        viewBox="0 0 24 24" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M12 14l9-5-9-5-9 5 9 5z"></path><path stroke-linecap="round" stroke-linejoin="round"
+          d="M12 14l6.16-3.422a12.083 12.083 0 010 6.845L12 21l-6.16-3.578a12.083 12.083 0 010-6.845L12 14z"></path>
+      </svg>
+      <h3 class="text-xl font-semibold text-teal-900 mb-2">Fancy & Tailoring</h3>
+      <p class="text-gray-600">Ribbons, Laces, Decorative Rolls in Glass Cases</p>
+    </div>
+    <!-- Card 3: Stationery & Daily Needs -->
+    <div class="bg-white rounded-xl shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition">
+      <svg class="w-16 h-16 mb-4 text-green-500" fill="none" stroke="currentColor" stroke-width="2"
+        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M8 16h8M8 12h8M8 8h8M4 20h16M4 4h16"></path>
+      </svg>
+      <h3 class="text-xl font-semibold text-teal-900 mb-2">Stationery & Daily Needs</h3>
+      <p class="text-gray-600">Pens, Gifts, Toys, Everyday Essentials</p>
+    </div>
+    <!-- Card 4: Medical Products -->
+    <div class="bg-white rounded-xl shadow-md p-6 flex flex-col items-center text-center hover:shadow-lg transition">
+      <svg class="w-16 h-16 mb-4 text-green-500" fill="none" stroke="currentColor" stroke-width="2"
+        viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round"
+          d="M10 14l2-2m-2 6v-6m4-8a9 9 0 11-8 8 9 9 0 018-8z"></path>
+      </svg>
+      <h3 class="text-xl font-semibold text-teal-900 mb-2">Medical Products</h3>
+      <p class="text-gray-600">Healthcare Essentials, First Aid, Medicines</p>
+    </div>
+  </div>
+</section>
+
+<!-- WhatsApp Order CTA -->
+<section class="bg-green-500 text-white py-12 px-4 sm:px-6 lg:px-8 text-center">
+  <h2 class="text-3xl font-extrabold mb-4">Order Anything via WhatsApp!</h2>
+  <p class="text-lg max-w-xl mx-auto mb-6">Looking for a product? Just send us your order on WhatsApp and we will get it ready for you!</p>
+  <a href="https://wa.me/9453157463" target="_blank" rel="noopener" aria-label="Order on WhatsApp" 
+    class="inline-flex items-center gap-3 bg-white text-green-600 font-semibold px-8 py-3 rounded-full hover:bg-gray-100 shadow-lg transition">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M20.52 3.48A11.88 11.88 0 0012 .1a11.88 11.88 0 00-8.91 20.44l-1.42 4.57 4.69-1.36a11.87 11.87 0 0014.16-20.27zm-8.42 18.5a9.32 9.32 0 01-4.8-1.39l-.34-.2-2.78.8.79-2.71-.23-.35a9.3 9.3 0 015.33-15.11 9.37 9.37 0 019.7 8.14 9.36 9.36 0 01-7.38 10.82zm5.3-6.2l-1.53-.66a.89.89 0 00-1 .22l-.48.64a6.53 6.53 0 01-3.05-1.88 6.47 6.47 0 01-1.68-3.29l.72-.44a.9.9 0 00.36-1.15l-1.13-2a.92.92 0 00-1.31-.36l-1.53.91a.9.9 0 00-.4 1 8.4 8.4 0 00.56 1.31l3.45 6.26a3.23 3.23 0 002.9 1.54 3.27 3.27 0 002.63-1.46l.42-.65a.9.9 0 00-.23-1.22z"/>
+    </svg>
+    Order via WhatsApp: 9453157463
+  </a>
+</section>
+
+<!-- Contact & Visit Us Section -->
+<section id="contact" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 bg-white rounded-lg shadow-lg my-12">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div>
+      <h2 class="text-3xl font-extrabold text-teal-900 mb-6">Contact & Visit Us</h2>
+      <address class="not-italic text-gray-700 space-y-3">
+        <p><strong>Our Address:</strong> Near Main Market, Nisar Town, City, State, Postal Code</p>
+        <p><strong>Shop Timings:</strong> Mon-Sat: 9:00 AM - 9:00 PM, Sunday: Closed</p>
+        <p><strong>Phone:</strong> <a href="tel:+9453157463" class="text-green-600 hover:underline">9453157463</a></p>
+      </address>
+    </div>
+    <div class="rounded-md overflow-hidden shadow-md">
+      <!-- Placeholder map - can replace with embedded Google Map -->
+      <iframe
+        title="Nisar General Store Location"
+        src="https://maps.google.com/maps?q=near%20main%20market&t=&z=13&ie=UTF8&iwloc=&output=embed"
+        width="100%" height="250" class="border-0" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-teal-900 text-green-300 py-8">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+    <svg class="mx-auto h-12 w-12 mb-3 text-green-400" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+      stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+      <path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M13 5v6h6"></path>
+    </svg>
+    <p class="max-w-xl mx-auto mb-2 font-semibold">NISAR General Store &mdash; Trusted neighborhood shop for all your daily needs.</p>
+    <p class="text-sm text-green-300">&copy; 2024 NISAR General Store. All rights reserved.</p>
+  </div>
+</footer>
+
+<script>
+  // Mobile menu toggle
+  const menuBtn = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+  menuBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
+
+</body>
+</html>
